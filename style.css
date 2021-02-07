@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  list-style: none;
+  background: rgb(212, 87, 87);
+}
+
+#navbar li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar li ul {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+#navbar li ul:hover {
+  background: rgb(184, 9, 9);
+  cursor: pointer;
+}
+
+#navbar li ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 330px) {
+  #navbar li {
+    display: flex;
+    flex-direction: column;
+  }
+}
