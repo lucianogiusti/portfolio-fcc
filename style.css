@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -31,13 +33,6 @@
   color: #fff;
 }
 
-@media (max-width: 330px) {
-  #navbar li {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 /* Welcome Section */
 
 #welcome-section {
@@ -45,6 +40,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   background: rgb(27, 26, 26);
   height: 100vh;
 }
@@ -64,22 +60,137 @@
 /* Projects section */
 
 #projects {
-  display: grid;
-  height: 100vh;
   text-align: center;
   background: #45567d;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .text-project {
-  grid-column: 1 / 3;
-  grid-row: 1;
   font-size: 1.6rem;
+  padding-top: 2.2rem;
   color: rgb(201, 192, 192);
 }
 
+.projects-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
 #projects img {
+  display: block;
   height: 300px;
-  width: 500px;
+  width: 100%;
   object-fit: cover;
+  padding-top: 2rem;
+}
+
+.p-grid {
+  font-size: 1.4rem;
+  padding: 1.5rem 0.5rem;
+  background: rgb(54, 43, 43);
+  color: #fff;
+}
+
+.p-grid:hover {
+  color: rgb(89, 171, 192);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Contact Section */
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
+  font-size: 1.7rem;
+  background: rgb(46, 46, 53);
+}
+
+.contact-header h2 {
+  color: #fff;
+  font-size: 4rem;
+  padding: 1.4rem;
+}
+
+.contact-header p {
+  color: rgb(172, 59, 59);
+  font-size: 2rem;
+  font-style: italic;
+  padding-bottom: 3rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  padding: 0 1rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-links i {
+  padding: 1rem;
+}
+
+.contact-links a:hover {
+  color: aqua;
+  transform: translateY(8px);
+}
+
+/* Footer */
+
+footer {
+  background: rgb(46, 46, 53);
+}
+
+footer p {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  border-top: 4px solid rgb(172, 59, 59);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Media queries */
+
+@media (max-width: 380px) {
+  #navbar li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #projects {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-header h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .contact-header p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .contact-links a {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
 }

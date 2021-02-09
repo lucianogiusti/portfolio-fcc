@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio for FreeCodeCamp</title>
 </head>
 <body>
     <nav id="navbar">
         <li>
-            <ul><a href="#about">About</a></ul>
-            <ul><a href="#work">Work</a></ul>
+            <ul><a href="#welcome-section">About</a></ul>
+            <ul><a href="#projects">Work</a></ul>
             <ul><a href="#contact">Contact</a></ul>
         </li>
     </nav>
@@ -24,24 +27,34 @@
         <div class="text-project">
             <h2>These are some of my projects</h2>
         </div>
+        <div class="projects-tile">
         <a href="https://github.com/lucianogiusti/css-hamburgermenu" target="_blank" class="project-tile">
             <img src="./img/hamburger-menu.png" alt="hamburger-menu">
-            <p>Hamburger Menu</p>
+            <p class="p-grid">Hamburger Menu</p>
         </a>
 
         <a href="https://github.com/lucianogiusti/presentationwebsite" target="_blank" class="project-tile">
             <img src="./img/creative-presentation-ideas-dont-read-from-slides.png" alt="presentationwebsite">
-            <p>Presentation Website</p>
+            <p class="p-grid">Presentation Website</p>
         </a>
             
         <a href="https://github.com/lucianogiusti/hotelcss.github.io" target="_blank" class="project-tile">
             <img src="./img/fondo-fachada-hotel-plana_23-2148157379.jpg" alt="hotel">
-            <p>Hotel Website</p>
+            <p class="p-grid">Hotel Website</p>
         </a>
         <a href="https://github.com/lucianogiusti/italy" target="_blank" class="project-tile">
             <img src="./img/20GorgeousSidetownsinItaly__HERO_shutterstock_688078159.jpg" alt="italy-project">
-            <p>Italy Project</p>
+            <p class="p-grid">Italy Project</p>
         </a>
+        <a href="https://github.com/lucianogiusti/robofriends" target="_blank" class="project-tile">
+            <img src="./img/robots-mascarillas-gel-india-1900621.jpg" alt="robots">
+            <p class="p-grid">Robofriends</p>
+        </a>
+        <a href="https://lucianogiusti.github.io/facerecognitionapp/" target="_blank" class="project-tile">
+            <img src="./img/facial-recognition-use-triggers-gdpr-fine-showcase_image-10-a-12991.jpg" alt="faceapp">
+            <p class="p-grid">FaceRecognition App</p>
+        </a>
+        </div>
     </section>
 
     <section id="contact">
@@ -50,14 +63,14 @@
             <p>How do you take your coffee?</p>
         </div>
         <div class="contact-links">
-            <a href="">
-                <i></i>Facebook
+            <a href="https://facebook.com">
+                <i class="fab fa-facebook-square"></i>Facebook
             </a>
-            <a href="" id="profile-link">
-                <i></i>GitHub
+            <a href="https://github.com/lucianogiusti" id="profile-link">
+                <i class="fab fa-github"></i>GitHub
             </a>
-            <a href="">
-                <i></i>Twitter
+            <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>Twitter
             </a>
         </div>
     </section>
